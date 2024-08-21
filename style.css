@@ -1,162 +1,155 @@
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: arial, sans-serif;
 }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 12px;
-    margin-top: 10px;
+    margin: 10px 12px 0 12px;
 }
+
 nav a {
     font-size: 13px;
     display: inline-block;
-    Line-height: 24px;
+    line-height: 24px;
     font-weight: 400;
-    color: rgb(0,0,0, 0.87);
+    color: rgba(0, 0, 0, 0.87);
     cursor: pointer;
     padding: 5px 7px;
     margin-right: 3px;
 }
+
 nav a:hover {
     text-decoration: underline;
-    opacity: .8;
+    opacity: 0.8;
 }
-nav .gmailmenu {
-    width: 32px;
-    height: 30px;
+
+nav .gmailmenu, nav .gmailaccount {
     padding: 5px;
     margin: auto 1px;
     cursor: pointer;
+}
+
+nav .gmailmenu {
+    width: 32px;
+    height: 30px;
 }
 
 nav .gmailaccount {
     width: 50px;
     height: 45px;
-    padding: 5px;
-    margin: auto 1px;
-    cursor: pointer;
 }
 
 nav img:hover {
-    opacity: 0.8;;
+    opacity: 0.8;
 }
-.section-1{
-    flex:1;
+
+.section-1 {
+    flex: 1;
+    text-align: center;
 }
-.section-1 .logo{
-    display: block;
-    margin: 0px auto;
-    margin-top: 7px;
+
+.section-1 .logo {
+    margin: 7px auto 0;
     width: 280px;
     height: 95px;
 }
-.s-box{
-    width: 580px;
-    margin: 0px auto;
-    margin-top: -7px;
-    text-align: center;
 
+.s-box {
+    width: 90%;
+    max-width: 580px;
+    margin: -7px auto 0;
+    text-align: center;
+    position: relative;
 }
-.s-box .s-input{
+
+.s-box .s-input {
     display: block;
     border: 1px solid #ddd;
     font-size: 16px;
-    padding: 13px;
-    padding-left: 45px;
+    padding: 13px 45px;
     border-radius: 25px;
     width: 100%;
     transition: box-shadow 100ms;
     outline: none;
 }
+
 .s-box .s-input:hover {
     border: 1px solid #fff;
     box-shadow: 0 0 2px;
 }
-.s-box .search-icon{
+
+.s-box .search-icon,
+.s-box .mic-icon,
+.s-box .image-icon {
     width: 15px;
     position: absolute;
     opacity: 0.8;
-    top: 206px;
-    left: 368px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.s-box .mic-icon{
-    width: 15px;
-    position: absolute;
-    top: 202px;
-    left: 860px;
+
+.s-box .search-icon {
+    left: 20px;
 }
-.s-box .image-icon{
-    width: 25px;
-    position: absolute;
-    top: 200px;
-    left: 890px;
+
+.s-box .mic-icon {
+    right: 60px;
 }
-.s-btn{
-    margin: 0px auto;
-    margin-right: 620px;
-    top: 270px;
-    left: 500px;
-    font-size: 14px; 
-    color: black; 
-    border: none; 
-    width: 130px; 
-    height: 38px;
-    position: absolute;
-    background: #F5F5F5;
-    border-radius: 2px;
+
+.s-box .image-icon {
+    right: 20px;
 }
-.s-btn:hover{
-    border: 1px solid #e4e0e0;
-    box-shadow: 0 0 1px;
-}
-.s-btn2{
-    margin: 0px auto;
-    margin-right: 440px;
-    margin-bottom: 100px;
-    top: 270px;
-    left: 650px;
-    border: none; 
-    font-size: 14px; 
-    color: black; 
-    position: absolute;
-    width: 130px; 
+
+.s-btn, .s-btn2 {
+    font-size: 14px;
+    color: black;
+    border: none;
+    width: 130px;
     height: 38px;
     background: #F5F5F5;
     border-radius: 2px;
+    position: relative;
+    margin: 10px auto;
+    display: block;
 }
-.s-btn2:hover{
+
+.s-btn:hover, .s-btn2:hover {
     border: 1px solid #e4e0e0;
     box-shadow: 0 0 1px;
 }
 
-.lang{
-    margin: 0px auto;
-    margin-top: 60px;
-    margin-bottom: -40px;
-    margin-right: 450px;
+.lang {
     width: 250px;
-    height: 290px;
+    margin: 60px auto -40px;
+    text-align: center;
     font-size: small;
 }
+
 .lang a:hover {
     text-decoration: underline;
-    opacity: .8;
+    opacity: 0.8;
 }
-footer{
+
+footer {
     background: #f2f2f2;
     margin-top: -40px;
+    text-align: center;
+    padding: 20px 0;
 }
-footer h4{
+
+footer h4 {
     color: black;
     font-size: 15px;
     line-height: 39.5px;
@@ -164,25 +157,107 @@ footer h4{
     padding-left: 29px;
     border-bottom: 1px solid #E0E0E0;
 }
-footer a{
+
+footer a {
     color: black;
     display: inline-block;
     padding: 12px 11.3px;
     font-size: 14px;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
-.links{
+
+.links {
     border-top: 1px solid #ddd;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.link1{
-    padding-left: 25px;
-    flex:1;
-    margin-left: -5px;
+
+.link1, .link2 {
+    padding: 0 25px;
+    margin-bottom: 10px;
+    flex: 1 1 50%;
+    text-align: center;
 }
-.link2{
-    padding-right: 20px;
-    
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+    .section-1 .logo {
+        width: 200px;
+        height: 70px;
+    }
+
+    .s-box {
+        width: 100%;
+    }
+
+    .s-btn, .s-btn2 {
+        font-size: 12px;
+        width: 100px;
+        height: 35px;
+    }
+
+    .lang {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer h4, footer a {
+        font-size: 13px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    nav .gmailmenu, nav .gmailaccount {
+        width: 24px;
+        height: 24px;
+    }
+
+    .s-box .s-input {
+        padding: 10px 35px;
+        font-size: 14px;
+    }
+
+    .s-box .search-icon,
+    .s-box .mic-icon,
+    .s-box .image-icon {
+        width: 12px;
+    }
+
+    .s-btn, .s-btn2 {
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .lang {
+        font-size: smaller;
+    }
+
+    footer h4, footer a {
+        font-size: 12px;
+    }
 }
