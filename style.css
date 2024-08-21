@@ -183,8 +183,6 @@ footer a:hover {
     text-align: center;
 }
 
-/* Responsive Design */
-
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
