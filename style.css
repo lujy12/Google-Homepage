@@ -86,20 +86,20 @@ nav img:hover {
     width: 15px;
     position: absolute;
     opacity: 0.8;
-    top: 206px;
-    left: 368px;
+    top: 213px;
+    left: 360px;
 }
 .s-box .mic-icon{
     width: 15px;
     position: absolute;
-    top: 202px;
-    left: 860px;
+    top: 211px;
+    left: 853px;
 }
 .s-box .image-icon{
     width: 25px;
     position: absolute;
-    top: 200px;
-    left: 890px;
+    top: 209px;
+    left: 884px;
 }
 .s-btn{
     margin: 0px auto;
