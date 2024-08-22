@@ -32,7 +32,7 @@ nav a:hover {
     opacity: .8;
 }
 nav .gmailmenu {
-    width: 32px;
+    width: 30px;
     height: 30px;
     padding: 5px;
     margin: auto 1px;
@@ -40,8 +40,8 @@ nav .gmailmenu {
 }
 
 nav .gmailaccount {
-    width: 50px;
-    height: 45px;
+    width: 68px;
+    height: 56px;
     padding: 5px;
     margin: auto 1px;
     cursor: pointer;
